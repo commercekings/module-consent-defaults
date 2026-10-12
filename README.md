@@ -1,5 +1,10 @@
 # CommerceKings_ConsentDefaults
 
+Install in a Magento project with `composer require commercekings/module-consent-defaults:^0.1` after the first
+release is published. Enable the Magento module(s) listed below and run `bin/magento setup:upgrade`.
+For development/tests use source checkouts (`--prefer-source`); release archives omit `Test/`.
+
+
 Shared banner categories for the consent banner adapters (e.g. `CommerceKings_ConsentVanilla`) – every adapter requires this package, so a banner always comes with working categories. Each optional category shows only while a feature module uses it. The preset supplies no purpose declarations, tracking, content loading or cookie cleanup.
 
 | Category | Required | Mapped purpose | When shown |

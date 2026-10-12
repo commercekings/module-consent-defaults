@@ -16,6 +16,7 @@ use SimpleXMLElement;
 class PresetTest extends TestCase
 {
     /** @dataProvider installedPurposes */
+    #[\PHPUnit\Framework\Attributes\DataProvider('installedPurposes')]
     public function testPresetOnlyShowsCategoriesForInstalledPurposes(array $purposes, array $expectedMap): void
     {
         foreach ($this->adapters() as $class => $mapKey) {
@@ -103,11 +104,11 @@ class PresetTest extends TestCase
         )));
         $xml = simplexml_load_file(dirname(__DIR__, 2) . '/etc/di.xml');
         $defaults = $this->items($xml->xpath('//argument[@name="defaultCategories"]')[0]);
-        $config = $this->createMock(SourceConfigInterface::class);
+        $config = $this->createStub(SourceConfigInterface::class);
         $config->method('getCookieName')->willReturn('banner');
         $config->method('getRevision')->willReturn('1');
         $config->method('getCookieLifetimeDays')->willReturn(182);
-        $manager = $this->createMock(CookieManagerInterface::class);
+        $manager = $this->createStub(CookieManagerInterface::class);
         $manager->method('getCookie')->willReturnCallback(fn ($name) => $cookies[$name] ?? null);
         return new $class($manager, new CategoryMapper($registry, $defaults), $config, $categories,
             [new V3()]);
