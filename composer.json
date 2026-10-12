@@ -1,0 +1,32 @@
+{
+    "name": "commercekings/module-consent-defaults",
+    "description": "Shared banner categories (Necessary, Analytics, External content, Personalization, Marketing), installed with every CommerceKings consent banner adapter; each category shows only while a feature uses it.",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CommerceKings"
+        }
+    ],
+    "require": {
+        "php": "~8.1.0||~8.2.0||~8.3.0",
+        "magento/framework": "*",
+        "commercekings/module-consent": "^0.1"
+    },
+    "suggest": {
+        "commercekings/module-consent-google-tag": "Declares the analytics and marketing purposes"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "CommerceKings\\ConsentDefaults\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        }
+    }
+}

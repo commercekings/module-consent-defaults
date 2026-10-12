@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Shared fallback for adapters using CategoryMapper; explicit source categories replace it. -->
+    <type name="CommerceKings\Consent\Model\CategoryMapper">
+        <arguments>
+            <argument name="defaultCategories" xsi:type="array">
+                <item name="necessary" xsi:type="array">
+                    <item name="label" xsi:type="string">Strictly necessary</item>
+                    <item name="description" xsi:type="string">Required for the shop and your consent preferences to work.</item>
+                    <item name="required" xsi:type="boolean">true</item>
+                    <item name="sort_order" xsi:type="number">10</item>
+                </item>
+                <!-- analytics and marketing list no purposes: each integration declares its own purpose with
+                     category = analytics / marketing (e.g. google_analytics, google_ads) -->
+                <item name="analytics" xsi:type="array">
+                    <item name="label" xsi:type="string">Analytics</item>
+                    <item name="description" xsi:type="string">Helps us understand how visitors use this shop.</item>
+                    <item name="hide_if_unmapped" xsi:type="boolean">true</item>
+                    <item name="sort_order" xsi:type="number">20</item>
+                </item>
+                <item name="external" xsi:type="array">
+                    <item name="label" xsi:type="string">External content</item>
+                    <item name="description" xsi:type="string">Allows content from third parties to load in this shop.</item>
+                    <item name="hide_if_unmapped" xsi:type="boolean">true</item>
+                    <item name="sort_order" xsi:type="number">30</item>
+                    <item name="purposes" xsi:type="array">
+                        <item name="external_content" xsi:type="string">external_content</item>
+                    </item>
+                </item>
+                <item name="personalization" xsi:type="array">
+                    <item name="label" xsi:type="string">Personalization</item>
+                    <item name="description" xsi:type="string">Lets this shop use what you do here to contact you about it - for example, an email reminder to the address you enter at checkout about an order you didn't finish. You can withdraw this permission at any time.</item>
+                    <item name="hide_if_unmapped" xsi:type="boolean">true</item>
+                    <item name="sort_order" xsi:type="number">40</item>
+                    <item name="purposes" xsi:type="array">
+                        <item name="cart_reminder" xsi:type="string">cart_reminder</item>
+                    </item>
+                </item>
+                <!-- third-party advertising (e.g. Google Ads, with Consent Mode's ad_storage, ad_user_data, ad_personalization);
+                     shown once an integration declares a purpose with category = marketing - override the description with the real networks -->
+                <item name="marketing" xsi:type="array">
+                    <item name="label" xsi:type="string">Marketing</item>
+                    <item name="description" xsi:type="string">Lets advertising partners such as Google and Meta measure our ads and show you relevant ads on other websites. You can withdraw this permission at any time.</item>
+                    <item name="hide_if_unmapped" xsi:type="boolean">true</item>
+                    <item name="sort_order" xsi:type="number">50</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>
