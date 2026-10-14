@@ -9,6 +9,7 @@ use CommerceKings\Consent\Model\CategoryMapper;
 use CommerceKings\Consent\Model\PurposePool;
 use CommerceKings\ConsentVanilla\Model\CookieFormat\V3;
 use CommerceKings\ConsentVanilla\Model\Source as Vanilla;
+use Magento\Framework\Serialize\Serializer\Json;
 use Magento\Framework\Stdlib\CookieManagerInterface;
 use PHPUnit\Framework\TestCase;
 use SimpleXMLElement;
@@ -110,7 +111,7 @@ class PresetTest extends TestCase
         $config->method('getCookieLifetimeDays')->willReturn(182);
         $manager = $this->createStub(CookieManagerInterface::class);
         $manager->method('getCookie')->willReturnCallback(fn ($name) => $cookies[$name] ?? null);
-        return new $class($manager, new CategoryMapper($registry, $defaults), $config, $categories,
+        return new $class($manager, new CategoryMapper($registry, $defaults), $config, new Json(), $categories,
             [new V3()]);
     }
 
