@@ -6,7 +6,7 @@ Install in a Magento project with `composer require commercekings/module-consent
 release is published. Then enable its modules:
 
 ```sh
-bin/magento module:enable CommerceKings_Consent CommerceKings_ConsentDefaults
+bin/magento module:enable CommerceKings_Core CommerceKings_Consent CommerceKings_ConsentDefaults
 bin/magento setup:upgrade
 bin/magento cache:clean
 ```
@@ -33,7 +33,7 @@ Install a banner adapter (this preset comes with it) and the feature modules you
 
 ```sh
 composer require commercekings/module-consent-vanilla commercekings/module-consent-google-tag
-bin/magento module:enable CommerceKings_Consent CommerceKings_ConsentVanilla CommerceKings_ConsentDefaults CommerceKings_ConsentGoogleTag
+bin/magento module:enable CommerceKings_Core CommerceKings_Consent CommerceKings_ConsentVanilla CommerceKings_ConsentDefaults CommerceKings_ConsentGoogleTag
 bin/magento setup:upgrade
 bin/magento setup:di:compile
 bin/magento cache:clean
