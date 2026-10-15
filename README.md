@@ -39,7 +39,7 @@ bin/magento setup:di:compile
 bin/magento cache:clean
 ```
 
-Follow the shop's normal static-content deployment process, then select the banner in **Stores > Configuration > CommerceKings > Consent > Source** and set the privacy-policy URL. The preset does not select a source or enable analytics configuration in Magento. Configure the owning feature module separately.
+Follow the shop's normal static-content deployment process, then select the banner in **Stores > Configuration > CommerceKings > Consent > Cookie banner** and set the privacy-policy URL. The preset does not select a source or enable analytics configuration in Magento. Configure the owning feature module separately.
 
 ## Customization
 
