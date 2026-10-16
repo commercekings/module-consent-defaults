@@ -2,7 +2,7 @@
 
 **Sensible banner categories, ready on day one.**
 
-Necessary · Analytics · External content · Personalization · Marketing – each shown only when a feature uses it
+Necessary · Analytics · External content · Personalization · Marketing – each shown only when a feature uses it, each renamable
 
 The default banner categories for CommerceKings consent banners. A banner (e.g.
 `commercekings/module-consent-vanilla`) brings this package, so it always comes with working categories. Each optional
