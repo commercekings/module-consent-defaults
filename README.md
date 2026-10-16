@@ -1,8 +1,12 @@
 # Default consent categories
 
+Works with Magento 2.4+ · Luma and Hyvä · PHP 8.1–8.5
+
 **Sensible banner categories, ready on day one.**
 
-Necessary · Analytics · External content · Personalization · Marketing – each shown only when a feature uses it, each renamable
+- **Five categories:** Necessary, Analytics, External content, Personalization, Marketing.
+- **Shown only when used.** An empty category never appears in the banner.
+- **Yours to change.** Rename or replace any of them in your site module.
 
 The default banner categories for CommerceKings consent banners. A banner (e.g.
 `commercekings/module-consent-vanilla`) brings this package, so it always comes with working categories. Each optional
