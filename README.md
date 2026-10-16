@@ -1,6 +1,4 @@
-# CommerceKings_ConsentDefaults
-
-**Development status:** first-release feature scope frozen; polishing and verification remain before publication.
+# Default consent categories
 
 The default banner categories for CommerceKings consent banners. A banner (e.g.
 `commercekings/module-consent-vanilla`) brings this package, so it always comes with working categories. Each optional
