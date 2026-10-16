@@ -10,8 +10,8 @@
                     <item name="required" xsi:type="boolean">true</item>
                     <item name="sort_order" xsi:type="number">10</item>
                 </item>
-                <!-- analytics and marketing list no purposes: each integration declares its own purpose with
-                     category = analytics / marketing (e.g. google_analytics, google_ads) -->
+                <!-- the optional categories list no purposes: each integration declares its own purpose with
+                     category = analytics / personalization / marketing (e.g. google_analytics, cart_reminder, google_ads) -->
                 <item name="analytics" xsi:type="array">
                     <item name="label" xsi:type="string">Analytics</item>
                     <item name="description" xsi:type="string">Helps us understand how visitors use this shop.</item>
@@ -32,9 +32,6 @@
                     <item name="description" xsi:type="string">Lets this shop use what you do here to contact you about it - for example, an email reminder to the address you enter at checkout about an order you didn't finish. You can withdraw this permission at any time.</item>
                     <item name="hide_if_unmapped" xsi:type="boolean">true</item>
                     <item name="sort_order" xsi:type="number">40</item>
-                    <item name="purposes" xsi:type="array">
-                        <item name="cart_reminder" xsi:type="string">cart_reminder</item>
-                    </item>
                 </item>
                 <!-- third-party advertising (e.g. Google Ads, with Consent Mode's ad_storage, ad_user_data, ad_personalization);
                      shown once an integration declares a purpose with category = marketing - override the description with the real networks -->

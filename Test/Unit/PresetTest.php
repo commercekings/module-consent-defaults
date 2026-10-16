@@ -98,7 +98,8 @@ class PresetTest extends TestCase
     private function source(string $class, array $purposes, array $categories = [], array $cookies = []): SourceInterface
     {
         // integrations name their preset category themselves (purpose "category")
-        $categoryOf = ['google_analytics' => 'analytics', 'another_analytics' => 'analytics', 'google_ads' => 'marketing'];
+        $categoryOf = ['google_analytics' => 'analytics', 'another_analytics' => 'analytics', 'cart_reminder' => 'personalization',
+            'google_ads' => 'marketing'];
         $registry = new PurposePool(array_combine($purposes, array_map(
             fn ($purpose) => ['terms_revision' => '1'] + (isset($categoryOf[$purpose]) ? ['category' => $categoryOf[$purpose]] : []),
             $purposes

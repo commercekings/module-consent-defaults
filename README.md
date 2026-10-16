@@ -16,7 +16,7 @@ bin/magento setup:upgrade
 | Strictly necessary | Yes | nothing | always |
 | Analytics | No | purposes declared with `category = analytics` (e.g. `google_analytics`) | while one is in use |
 | External content | No | `external_content` | while in use |
-| Personalization | No | `cart_reminder` | while in use |
+| Personalization | No | purposes declared with `category = personalization` (e.g. `cart_reminder`) | while one is in use |
 | Marketing | No | purposes declared with `category = marketing` (e.g. `google_ads`) | while one is in use |
 
 Optional categories start off. A required category never grants a feature purpose. Each description names its

@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Personalization lists no purpose itself: features declare `category = personalization` on their own purpose
+  (abandoned cart: `cart_reminder`), so the defaults name no feature.
 - Shared required and optional banner categories, with feature-owned purpose mapping.
 - Prepare Composer metadata, Magento dependency bounds and source/distribution packaging for the first public release.
 - Adapt unit tests to PHPUnit 12 while retaining older data-provider annotations.
