@@ -5,7 +5,7 @@ The default banner categories for CommerceKings consent banners. A banner (e.g.
 category shows only while an installed feature uses it.
 
 ```sh
-composer require commercekings/module-consent-vanilla:^0.1   # brings this package
+composer require commercekings/module-consent-defaults:^0.1
 bin/magento setup:upgrade
 ```
 
