@@ -16,6 +16,9 @@
     "suggest": {
         "commercekings/module-consent-google-tag": "Declares the analytics and marketing purposes"
     },
+    "require-dev": {
+        "commercekings/module-consent-vanilla": "^0.1"
+    },
     "autoload": {
         "files": [
             "registration.php"
