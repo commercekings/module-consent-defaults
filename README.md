@@ -1,6 +1,6 @@
 # Default consent categories
 
-Works with Magento 2.4+ · Luma and Hyvä · PHP 8.1–8.5
+Works with Magento 2.4.4+ · Luma and Hyvä · PHP 8.1–8.5
 
 [![License](https://badgen.net/github/license/commercekings/module-consent-defaults)](LICENSE) [![Release](https://badgen.net/github/release/commercekings/module-consent-defaults)](https://github.com/commercekings/module-consent-defaults/releases) [![Checks](https://badgen.net/github/checks/commercekings/module-consent-defaults/main?label=checks)](https://github.com/commercekings/module-consent-defaults/actions)
 
