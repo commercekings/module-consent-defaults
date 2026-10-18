@@ -1,4 +1,4 @@
-# Default consent categories
+# Default consent categories<a href="https://commercekings.net"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/commercekings/module-consent-defaults/main/.github/commercekings-dark.svg"><img align="right" width="152" src="https://raw.githubusercontent.com/commercekings/module-consent-defaults/main/.github/commercekings-light.svg" alt="Built by CommerceKings. Ready to sell more? Talk to us"></picture></a>
 
 Works with Magento 2.4.4+ · Luma and Hyvä · PHP 8.1–8.5
 
@@ -6,7 +6,7 @@ Works with Magento 2.4.4+ · Luma and Hyvä · PHP 8.1–8.5
 
 **Sensible banner categories, ready on day one.**
 
-- **Five categories:** Necessary, Analytics, External content, Personalization, Marketing.
+- **Five categories:** Strictly necessary, Analytics, External content, Personalization, Marketing.
 - **Shown only when used.** An empty category never appears in the banner.
 - **Yours to change.** Rename or replace any of them in your site module.
 
@@ -41,3 +41,10 @@ these defaults entirely. Examples: [categories and customization](docs/customiza
 ## More
 
 [Categories and customization](docs/customization.md) · [Compatibility](COMPATIBILITY.md) · [Changes](CHANGELOG.md)
+
+## Disclaimer
+
+These modules help you ask for, record and respect your shoppers' choices – they don't make your store compliant on
+their own. You are responsible for your store's privacy: what you collect, the wording you show, your privacy policy
+and whether your setup meets the laws that apply to you (e.g. GDPR, ePrivacy, email marketing rules). Get legal advice
+if you are unsure.
