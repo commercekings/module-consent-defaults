@@ -38,6 +38,10 @@ Override labels or descriptions in your site module's `di.xml` (argument `defaul
 `CommerceKings\Consent\Model\CategoryMapper`), or give the banner its own complete `categories` – they then replace
 these defaults entirely. Examples: [categories and customization](docs/customization.md).
 
+## Tested (as of 0.1.0)
+
+Configuration only – tested with the modules that use it (9 unit tests of its own). See *Tested* in [Provable Consent](https://github.com/commercekings/module-consent#tested-as-of-010) and [Cookie banner](https://github.com/commercekings/module-consent-vanilla#tested-as-of-010).
+
 ## More
 
 [Categories and customization](docs/customization.md) · [Compatibility](COMPATIBILITY.md) · [Changes](CHANGELOG.md)
@@ -48,10 +52,6 @@ These modules help you ask for, record and respect your shoppers' choices – th
 their own. You are responsible for your store's privacy: what you collect, the wording you show, your privacy policy
 and whether your setup meets the laws that apply to you (e.g. GDPR, ePrivacy, email marketing rules). Get legal advice
 if you are unsure.
-
-## Tested (as of 0.1.0)
-
-Configuration only – tested with the modules that use it (9 unit tests of its own). See *Tested* in [Provable Consent](https://github.com/commercekings/module-consent#tested-as-of-010) and [Cookie banner](https://github.com/commercekings/module-consent-vanilla#tested-as-of-010).
 
 ---
 
